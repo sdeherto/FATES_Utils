@@ -564,9 +564,7 @@ if (file.exists(mlai_file)){
                  arrange(time,source)
    n_site_time = nrow(site1d)
    
-   
-   # Temporary patch: rename LAI as fates_lai
-   names(site1d)[names(site1d) %in% "lai"] = "fates_lai"
+
 }else{
    # MODIS data not found. Turn eddy1d into site1d.
    site1d = eddy1d
